@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://superqxh.github.io.git">
-  <title>innerText和innerHtml区别 | myblog</title>
+  <title>slice(),splice(),split(),substring(),substr()使用方法和区别 | myblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="innerText和innerHTML的主要区别 Text主要返回是内容HTML的话会返回所有的标签和内容">
+  <meta name="description" content="1.slice（）；Array和String对象都有 在Array中  slice(i,[j])  i为开始截取的索引值,负数代表从末尾算起的索引值，-1为倒数第一个元素j为结束的索引值，缺省时则获取从i到末尾的所有元素 参数返回： 返回索引值从i到j的数组，原数组不改变 在String中 slice(i,[j]) 参数说明：i为开始截取的索引值，负数代表从末尾算起的索引值，-1为倒数第一个字符j">
 <meta property="og:type" content="article">
-<meta property="og:title" content="innerText和innerHtml区别">
-<meta property="og:url" content="https://superqxh.github.io.git/2019/07/21/innerText和innerHtml区别/index.html">
+<meta property="og:title" content="slice(),splice(),split(),substring(),substr()使用方法和区别">
+<meta property="og:url" content="https://superqxh.github.io.git/2019/07/31/slice(),splice(),split(),substring(),substr()使用方法和区别/index.html">
 <meta property="og:site_name" content="myblog">
-<meta property="og:description" content="innerText和innerHTML的主要区别 Text主要返回是内容HTML的话会返回所有的标签和内容">
+<meta property="og:description" content="1.slice（）；Array和String对象都有 在Array中  slice(i,[j])  i为开始截取的索引值,负数代表从末尾算起的索引值，-1为倒数第一个元素j为结束的索引值，缺省时则获取从i到末尾的所有元素 参数返回： 返回索引值从i到j的数组，原数组不改变 在String中 slice(i,[j]) 参数说明：i为开始截取的索引值，负数代表从末尾算起的索引值，-1为倒数第一个字符j">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-21T11:48:25.689Z">
+<meta property="og:updated_time" content="2019-07-31T10:23:25.221Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="innerText和innerHtml区别">
-<meta name="twitter:description" content="innerText和innerHTML的主要区别 Text主要返回是内容HTML的话会返回所有的标签和内容">
+<meta name="twitter:title" content="slice(),splice(),split(),substring(),substr()使用方法和区别">
+<meta name="twitter:description" content="1.slice（）；Array和String对象都有 在Array中  slice(i,[j])  i为开始截取的索引值,负数代表从末尾算起的索引值，-1为倒数第一个元素j为结束的索引值，缺省时则获取从i到末尾的所有元素 参数返回： 返回索引值从i到j的数组，原数组不改变 在String中 slice(i,[j]) 参数说明：i为开始截取的索引值，负数代表从末尾算起的索引值，-1为倒数第一个字符j">
   
     <link rel="alternative" href="/atom.xml" title="myblog" type="application/atom+xml">
   
@@ -154,27 +154,54 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-innerText和innerHtml区别" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-slice(),splice(),split(),substring(),substr()使用方法和区别" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      innerText和innerHtml区别
+      slice(),splice(),split(),substring(),substr()使用方法和区别
     </h1>
   
 
         
-        <a href="/2019/07/21/innerText和innerHtml区别/" class="archive-article-date">
-  	<time datetime="2019-07-21T11:46:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-21</time>
+        <a href="/2019/07/31/slice(),splice(),split(),substring(),substr()使用方法和区别/" class="archive-article-date">
+  	<time datetime="2019-07-31T08:49:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-31</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="innerText和innerHTML的主要区别"><a href="#innerText和innerHTML的主要区别" class="headerlink" title="innerText和innerHTML的主要区别"></a>innerText和innerHTML的主要区别</h2><p> Text主要返回是内容HTML的话会返回所有的标签和内容</p>
+        <h3 id="1-slice（）；"><a href="#1-slice（）；" class="headerlink" title="1.slice（）；"></a>1.slice（）；</h3><p>Array和String对象都有</p>
+<p>在Array中  slice(i,[j]) </p>
+<p>i为开始截取的索引值,负数代表从末尾算起的索引值，-1为倒数第一个元素<br>j为结束的索引值，缺省时则获取从i到末尾的所有元素</p>
+<p>参数返回：<br> 返回索引值从i到j的数组，原数组不改变</p>
+<p>在String中 slice(i,[j])</p>
+<p>参数说明：<br>i为开始截取的索引值，负数代表从末尾算起的索引值，-1为倒数第一个字符<br>j为结束的索引值，缺省时则获取从i到末尾的所有字符</p>
+<a id="more"></a>
+
+<h3 id="2-splice（）"><a href="#2-splice（）" class="headerlink" title="2.splice（）"></a>2.splice（）</h3><p>存在Array中     方法向/从数组中添加/删除项目，然后返回被删除的项目。 该方法会改变原始数组</p>
+<p>splice(index,howmany,item1,itemx )</p>
+<p>index : 必需。整数，规定添加/删除项目的位置，使用负数可从数组结尾处规定位置。</p>
+<p>howmany: 必需。要删除的项目数量。如果设置为 0，则不会删除项目。</p>
+<p>item1…itemX : 可选。向数组添加的新项目。</p>
+<p>返回值  Array  包含被删除项目的新数组，如果有的话。</p>
+<h3 id="3-split（）"><a href="#3-split（）" class="headerlink" title="3.split（）"></a>3.split（）</h3><p>在String中 split（separator，howmany）</p>
+<p>separator：必需。字符串或正则表达式，从该参数指定的地方分割 stringObject。</p>
+<p>howmany： 可选。该参数可指定返回的数组的最大长度。如果设置了该参数，返回的子串不会多于这个参数指定的数组。如果没有设置该参数，整个字符串都会被分割，不考虑它的长度。</p>
+<p>返回值</p>
+<p>一个字符串数组。该数组是通过在separator指定的边界处将字符串StringObject分割成子串创建的。返回的数组的字符串不包含separator自身</p>
+<p>但是，如果 separator 是包含子表达式的正则表达式，那么返回的数组中包括与这些子表达式匹配的字串（但不包括与整个正则表达式匹配的文本）</p>
+<p>与jion（）函数相反效果</p>
+<h3 id="4-substring（）"><a href="#4-substring（）" class="headerlink" title="4.substring（）"></a>4.substring（）</h3><p>在String中  substring(start,stop)</p>
+<p>start：表示子字符串的开始位置，</p>
+<p>stop：表示结束结果。</p>
+<p>注意：第二个参数应该大于第一个参数。如果出现第一个参数大于第二个参数的情况，substring方法会自动更换两个参数的位置。 </p>
+<h3 id="5-substr（）"><a href="#5-substr（）" class="headerlink" title="5.substr（）"></a>5.substr（）</h3><p>在String中，substr（start，length）；</p>
+<p>start：子字符串的开始位置，</p>
+<p>length：子字符串的长度。</p>
 
       
 
@@ -259,7 +286,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://superqxh.github.io.git/2019/07/21/innerText和innerHtml区别/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://superqxh.github.io.git/2019/07/31/slice(),splice(),split(),substring(),substr()使用方法和区别/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -273,18 +300,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/07/31/slice(),splice(),split(),substring(),substr()使用方法和区别/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          slice(),splice(),split(),substring(),substr()使用方法和区别
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/07/18/diplay的flex布局/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">diplay的flex布局</div>
+    <a href="/2019/07/21/innerText和innerHtml区别/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">innerText和innerHtml区别</div>
       <i class="icon-circle-right"></i>
     </a>
   
